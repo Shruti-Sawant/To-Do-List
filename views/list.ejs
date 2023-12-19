@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do App</h2>
+                <form action="/" method="post" class="row">
+                    <input type="text" name="task" class="input-box" autocomplete="off" required>
+                    <button type="submit">Submit</button>
+                </form>
+            <ul id="list-container">
+                <%tasks.forEach(task=>{%>
+                <li class="checked"><%=task%></li>  
+                <%});%>
+            </ul>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
